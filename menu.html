@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Меню - Клод Моне</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/futerheader.css">
+</head>
+
+<body>
+<header>
+  <nav class="nav-left">
+    <a href="index.html">Главная</a>
+    <a href="menu.html">Меню</a>
+    <a href="korzina.html">Доставка</a>
+    <a href="booking.html">Информация</a>
+  </nav>
+  <nav class="nav-right">
+    <a href="vhod.html">Войти</a>
+    <a href="reg.html">Зарегистрироваться</a>
+  </nav>
+</header>
+  <h1 class="menu-title">Меню</h1>
+  <div class="tabs" role="tablist" aria-label="Категории меню">
+    <div class="tab active" role="tab" tabindex="0" aria-selected="true" data-category="novinki">Новинки</div>
+    <div class="tab" role="tab" tabindex="-1" aria-selected="false" data-category="salaty">Салаты</div>
+    <div class="tab" role="tab" tabindex="-1" aria-selected="false" data-category="zakuski">Закуски</div>
+    <div class="tab" role="tab" tabindex="-1" aria-selected="false" data-category="napitki">Напитки</div>
+    <div class="tab" role="tab" tabindex="-1" aria-selected="false" data-category="myaso">Мясо</div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="menu-items" id="menu-items">
+      <!-- Пример позиций. Для примера по 3 позиции в каждой категории -->
+      <!-- Новинки -->
+      <div class="menu-item" data-category="novinki">
+        <img src="img/фт.jpg" alt="Фруктовая тарелка" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Фруктовая тарелка</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Ароматное ассорти свежих сезонных фруктов
+          <div class="price">$8.50</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="novinki">
+        <img src="img/овс.jpg" alt="Овсянка" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Овсянка</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Классическая овсяная каша с ягодами
+          <div class="price">$7.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="novinki">
+        <img src="img/сч.jpg" alt="Смузи чаша" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Смузи чаша</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Ягодное смузи с семенами чиа и фруктами
+          <div class="price">$9.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <!-- Салаты -->
+      <div class="menu-item" data-category="salaty" style="display:none;">
+        <img src="img/цр.jpg" alt="Салат Цезарь" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Салат Цезарь</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Классический с курицей и соусом цезарь
+          <div class="price">$10.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="salaty" style="display:none;">
+        <img src="img/гс.jpg" alt="Греческий салат" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Греческий салат</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Оливки, сыр фета, овощи, ароматные травы
+          <div class="price">$8.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="salaty" style="display:none;">
+        <img src="img/сл.jpg" alt="Свекольный салат" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Свекольный салат</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Свекла, козий сыр, грецкий орех
+          <div class="price">$8.75</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <!-- Закуски -->
+      <div class="menu-item" data-category="zakuski" style="display:none;">
+        <img src="img/кч.jpg" alt="Карпаччо" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Карпаччо</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Тонко нарезанное мясо c приправами и сыром
+          <div class="price">$14.50</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="zakuski" style="display:none;">
+        <img src="img/кст.webp" alt="Мини-кростини" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Мини-кростини</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Гренки с прошутто и творожным сыром
+          <div class="price">$6.50</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="zakuski" style="display:none;">
+        <img src="img/сыр.jpeg" alt="Ассорти закусок" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Ассорти закусок</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Коллекция сыров, хлебцев и оливок
+          <div class="price">$12.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <!-- Напитки -->
+      <div class="menu-item" data-category="napitki" style="display:none;">
+        <img src="img/сок.jpg" alt="Свежевыжатый сок" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Свежевыжатый сок</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Ассорти свежих соков дня
+          <div class="price">$5.50</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="napitki" style="display:none;">
+        <img src="img/лт.webp" alt="Латте" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Латте</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Молочный кофе с насыщенным вкусом
+          <div class="price">$4.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="napitki" style="display:none;">
+        <img src="img/мхт.jpg" alt="Мохито" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Мохито</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Лимонный лонгдринк с мятой
+          <div class="price">$6.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <!-- Мясо -->
+      <div class="menu-item" data-category="myaso" style="display:none;">
+        <img src="img/стейк.jpg" alt="Стейк" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Стейк</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Идеально приготовленное мясо на гриле
+          <div class="price">$18.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="myaso" style="display:none;">
+        <img src="img/шашлык.webp" alt="Шашлык" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Шашлык</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Сочный шашлык из телятины
+          <div class="price">$15.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+      <div class="menu-item" data-category="myaso" style="display:none;">
+        <img src="img/курица.jpg" alt="Филе куриное" />
+        <div class="menu-item-content">
+          <div class="item-header">
+            <strong>Филе куриное</strong>
+            <button class="btn-info" title="Подробнее">i</button>
+          </div>
+          Куриное филе в специях, соус
+          <div class="price">$12.00</div>
+          <button class="btn-add">Добавить</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart" aria-live="polite" aria-label="Корзина заказов"></div>
+  </div>
+  <div class="cart-bottom">
+    <div class="cart-total"></div>
+    <button class="btn-order">Оформить заказ</button>
+    <button class="btn-clear">Очистить корзину</button>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-text"></div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-title">Клод Моне</div>
+    <div class="info">+7 (999) 999 99 99</div>
+    <div class="info">Ул. Аржанова, 43</div>
+    <div class="info">Завтраки: пн-вс 11:00-13:00</div>
+    <div class="info">вс-ср 11:00-00:00 / чт-сб 11:00-02:00</div>
+    <div class="info">info@npk.netpk</div>
+    <a href="booking.html" class="btn-reserve">Забронировать стол</a>
+  </footer>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

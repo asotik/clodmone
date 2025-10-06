@@ -1,0 +1,103 @@
+:root {
+  --dark-red: #240000;
+  --light-red: #410101;
+  --milk: #F2EFE6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--milk);
+  font-family: 'Inter', sans-serif;
+  color: var(--dark-red);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+
+main {
+  flex-grow: 1;
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background-image: url('../img/bc-pers.png');
+  background-size: 1500px;
+}
+
+/* Отдельный блок для слова "Регистрация" */
+.register-title {
+  background-color: var(--dark-red);
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  letter-spacing: 1px;
+  color: var(--milk);
+  padding: 10px 60px;
+  border-radius: 0 10px 10px 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* Секция с формой */
+.register-section {
+  background-color: var(--dark-red);
+  padding: 40px 40px 40px 40px;
+  box-shadow: 0 0 15px rgba(65, 1, 1, 0.6);
+  border: 3px solid var(--light-red);
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  box-sizing: border-box;
+  color: var(--milk);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+  height: 48px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.register-form button[type="submit"] {
+  background-color: var(--dark-red);
+  color: var(--milk);
+  padding: 14px 0;
+  border-radius: 6px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button[type="submit"]:hover {
+  background-color: var(--light-red);
+}
+

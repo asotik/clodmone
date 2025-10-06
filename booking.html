@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Информация и бронирование - Клод Моне</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/booking.css" />
+  <link rel="stylesheet" href="css/futerheader.css">
+</head>
+<body>
+  <header>
+    <nav class="nav-left">
+      <a href="index.html">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="korzina.html">Доставка</a>
+      <a href="booking.html">Информация</a>
+    </nav>
+    <nav class="nav-right">
+      <a href="vhod.html">Войти</a>
+      <a href="reg.html">Зарегистрироваться</a>
+    </nav>
+  </header>
+<main>
+  <h1>О нашем ресторане</h1>
+  <p>Добро пожаловать в «Клод Моне» — ресторан с уютной атмосферой и изысканной французской кухней. Мы гордимся качеством продуктов, вниманием к деталям и профессионализмом нашего персонала.</p>
+  <p>Наш интерьер вдохновлен знаменитым художником, сочетающим классический стиль с легкостью и романтикой. Здесь каждый посетитель почувствует себя особенным и сможет насладиться как традиционными блюдами, так и авторскими кулинарными шедеврами.</p>
+  <p>Мы расположены в центре города, на ул. Аржанова, 43. Приглашаем забронировать столик и провести приятный вечер в компании близких и друзей.</p>
+
+  <form id="booking-form">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" name="name" placeholder="Введите имя" required />
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999 99 99" required pattern="\+7\s*\(?\d{3}\)?\s*\d{3}[\s\-]?\d{2}[\s\-]?\d{2}" />
+
+    <label for="date">Дата бронирования:</label>
+    <input type="date" id="date" name="date" required />
+
+    <label for="time">Время:</label>
+    <input type="time" id="time" name="time" required min="11:00" max="22:00" />
+
+    <label for="people">Количество гостей:</label>
+    <select name="people" id="people" required>
+      <option value="" disabled selected>Выберите</option>
+      <option value="1">1 человек</option>
+      <option value="2">2 человека</option>
+      <option value="3">3 человека</option>
+      <option value="4">4 человека</option>
+      <option value="5">5 и больше</option>
+    </select>
+
+    <button type="submit">Забронировать стол</button>
+  </form>
+</main>
+<footer>
+  <div class="footer-title">Клод Моне</div>
+  <div class="info">+7 (999) 999 99 99</div>
+  <div class="info">Ул. Аржанова, 43</div>
+  <div class="info">Завтраки: пн-вс 11:00-13:00</div>
+  <div class="info">вс-ср 11:00-00:00 / чт-сб 11:00-02:00</div>
+  <div class="info">info@npk.netpk</div>
+  <a href="booking.html" class="btn-reserve">Забронировать стол</a>
+</footer>
+
+<script src="js/booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Корзина</title>
+  <link rel="stylesheet" href="css/korzina.css">
+  <link rel="stylesheet" href="css/futerheader.css">
+</head>
+<body>
+<div class="wrapper">
+  <!-- ЗАМЕНИТЬ этот nav на стандартный header -->
+  <header>
+    <nav class="nav-left">
+      <a href="index.html">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="korzina.html">Доставка</a>
+      <a href="booking.html">Информация</a>
+    </nav>
+    <nav class="nav-right">
+      <a href="vhod.html">Войти</a>
+      <a href="reg.html">Зарегистрироваться</a>
+    </nav>
+  </header>
+
+
+  <div class="bc">
+  <!-- Оставить этот заголовок как есть -->
+ <div class="page-title">
+    Корзина
+  </div>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="items" id="items-container">
+        <div class="item" data-price="1000">
+          <img src="img/м1.png" alt="Том Ям"/>
+          <div class="item-info">
+            <div>Название: Том Ям</div>
+            <div>Сумма: 1000</div>
+          </div>
+          <div class="quantity-controls">
+            <button class="btn btn-minus">-</button>
+            <div class="quantity">10</div>
+            <button class="btn btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item" data-price="1000">
+          <img src="img/м2.png" alt="Том Ям"/>
+          <div class="item-info">
+            <div>Название: Том Ям</div>
+            <div>Сумма: 1000</div>
+          </div>
+          <div class="quantity-controls">
+            <button class="btn btn-minus">-</button>
+            <div class="quantity">1</div>
+            <button class="btn btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item" data-price="1000">
+          <img src="img/м3.png" alt="Том Ям"/>
+          <div class="item-info">
+            <div>Название: Том Ям</div>
+            <div>Сумма: 1000</div>
+          </div>
+          <div class="quantity-controls">
+            <button class="btn btn-minus">-</button>
+            <div class="quantity">1</div>
+            <button class="btn btn-plus">+</button>
+          </div>
+        </div>
+        <div class="item" data-price="1000">
+          <img src="img/м4.png" alt="Том Ям"/>
+          <div class="item-info">
+            <div>Название: Том Ям</div>
+            <div>Сумма: 1000</div>
+          </div>
+          <div class="quantity-controls">
+            <button class="btn btn-minus">-</button>
+            <div class="quantity">1</div>
+            <button class="btn btn-plus">+</button>
+          </div>
+        </div>
+      </div>
+
+<form class="order-form" onsubmit="event.preventDefault(); alert('Заказ оформлен!');">
+  <label for="city">Город:</label>
+  <input type="text" id="city" name="city" required />
+  
+  <label for="street">Улица:</label>
+  <input type="text" id="street" name="street" required />
+  
+  <div class="row">
+    <div class="small-input">
+      <label for="kv">Кв:</label>
+      <input type="text" id="kv" name="kv" />
+    </div>
+    <div class="small-input">
+      <label for="dom">Дом:</label>
+      <input type="text" id="dom" name="dom" />
+    </div>
+  </div>
+  
+  <div class="leave-door">
+    <input type="checkbox" id="leave-door" name="leave-door" />
+    <label for="leave-door" style="cursor:pointer;">оставить у двери</label>
+  </div>
+  
+  <button class="order-btn" type="submit">Оформить заказ</button>
+</form>
+    </div>
+  </main>
+  </div>
+
+<footer>
+  <div class="footer-title">Клод Моне</div>
+  <div class="info">+7 (999) 999 99 99</div>
+  <div class="info">Ул. Аржанова, 43</div>
+  <div class="info">Завтраки: пн-вс 11:00-13:00</div>
+  <div class="info">вс-ср 11:00-00:00 / чт-сб 11:00-02:00</div>
+  <div class="info">info@npk.netpk</div>
+  <a href="booking.html" class="btn-reserve">Забронировать стол</a>
+</footer>
+<script src="js/korzina.js"></script>
+</body>
+</html>

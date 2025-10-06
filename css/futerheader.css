@@ -1,0 +1,144 @@
+/* Единые стили для хедера и футера */
+:root {
+  --dark-red: #240000;
+  --light-red: #410101;
+  --milk: #F2EFE6;
+}
+
+/* ХЕДЕР */
+header {
+  background-color: var(--dark-red);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  position: relative;
+  min-height: 60px;
+  box-sizing: border-box;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--milk);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+header nav a:hover {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+/* ФУТЕР */
+footer {
+  background-color: var(--dark-red);
+  padding: 40px 20px;
+  color: var(--milk);
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-title {
+  font-size: 120px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+footer div.info {
+  margin-bottom: 8px;
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+/* Кнопка забронировать */
+/* Кнопка забронировать - ИСПРАВЛЕННАЯ */
+.btn-reserve {
+  margin-top: 25px;
+  background-color: var(--milk);
+  border: none;
+  color: var(--dark-red);
+  padding: 12px 35px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 600;
+  font-size: 36px;
+  transition: all 0.3s ease;
+  display: inline-flex;         
+  align-items: center;         
+  justify-content: center;      
+  text-decoration: none;
+  max-width: 400px;
+  width: auto;
+  height: auto;
+  min-height: 60px;
+  text-align: center;            
+}
+
+.btn-reserve:hover {
+  background-color: var(--light-red);
+  color: var(--milk);
+  transform: translateY(-2px);
+}
+/* Адаптивность */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+    font-size: 16px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-left, .nav-right {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-title {
+    font-size: 80px;
+  }
+  
+  footer div.info {
+    font-size: 20px;
+  }
+  
+  .btn-reserve {
+    font-size: 28px;
+    padding: 10px 25px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  
+  .footer-title {
+    font-size: 60px;
+  }
+  
+  footer div.info {
+    font-size: 18px;
+  }
+  
+  .btn-reserve {
+    font-size: 24px;
+    padding: 8px 20px;
+    max-width: 250px;
+  }
+}
